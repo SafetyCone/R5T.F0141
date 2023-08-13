@@ -18,7 +18,7 @@ namespace R5T.F0141
             IDotnetPackName dotnetPackName,
             ITargetFrameworkMoniker targetFrameworkMoniker)
         {
-            var documentationXmlFilePaths = Instances.DotnetPackPathOperator.GetDocumentationXmlFilePaths(
+            var documentationXmlFilePaths = Instances.DotnetPackPathOperator.Get_DocumentationXmlFilePaths(
                 dotnetPackName,
                 targetFrameworkMoniker);
 
