@@ -22,10 +22,7 @@ namespace R5T.F0141
                 dotnetPackName,
                 targetFrameworkMoniker);
 
-            var documentationTarget = new DotnetFrameworkTarget()
-            {
-                TargetFrameworkMoniker = targetFrameworkMoniker,
-            };
+            var documentationTarget = Instances.DocumentationTargetOperator.Get_DotnetFrameworkTarget(targetFrameworkMoniker);
 
             var memberDocumentationsByIdentityName = await Instances.DocumentationFileOperator.Get_MemberDocumentationsByIdentityName(
                 documentationXmlFilePaths,
